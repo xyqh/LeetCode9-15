@@ -21,6 +21,18 @@ struct ListNode
         {};
 };
 
+struct Node
+{
+    Node *next;
+    Node *random;
+    int val;
+    Node(int _val):
+        val(_val),
+        next(nullptr),
+        random(nullptr)
+        {};
+};
+
 struct TreeNode
 {
     TreeNode *left;
