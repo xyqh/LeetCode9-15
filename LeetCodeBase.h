@@ -23,11 +23,15 @@ struct ListNode
 
 struct Node
 {
+    Node *left;
+    Node *right;
     Node *next;
     Node *random;
     int val;
     Node(int _val):
         val(_val),
+        left(nullptr),
+        right(nullptr),
         next(nullptr),
         random(nullptr)
         {};
